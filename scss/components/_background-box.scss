@@ -1,0 +1,692 @@
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.eot');
+    src: url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-Regular.woff2') format('woff2'),
+        url('../fonts/Raleway-Regular.woff') format('woff'),
+        url('../fonts/Raleway-Regular.ttf') format('truetype'),
+        url('../fonts/Raleway-Regular.svg#Raleway-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-BoldItalic.eot');
+    src: url('../fonts/Raleway-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Raleway-BoldItalic.woff') format('woff'),
+        url('../fonts/Raleway-BoldItalic.ttf') format('truetype'),
+        url('../fonts/Raleway-BoldItalic.svg#Raleway-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Italic.eot');
+    src: url('../fonts/Raleway-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-Italic.woff2') format('woff2'),
+        url('../fonts/Raleway-Italic.woff') format('woff'),
+        url('../fonts/Raleway-Italic.ttf') format('truetype'),
+        url('../fonts/Raleway-Italic.svg#Raleway-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Bold.eot');
+    src: url('../fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-Bold.woff2') format('woff2'),
+        url('../fonts/Raleway-Bold.woff') format('woff'),
+        url('../fonts/Raleway-Bold.ttf') format('truetype'),
+        url('../fonts/Raleway-Bold.svg#Raleway-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?99juau');
+    src:  url('../fonts/icomoon.eot?99juau#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?99juau') format('truetype'),
+      url('../fonts/icomoon.woff?99juau') format('woff'),
+      url('../fonts/icomoon.svg?99juau#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  /* 
+    "*" - "wildcard selector", inseamna "totul". Are prioritatea 0;
+  */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak-as: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-facebook2:before {
+    content: "\ea91";
+    color: blue;
+    font-size: 60px;
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+    color: blueviolet;
+    font-size: 30px;
+  }
+  
+  
+  html {
+    font-size: 20px;
+  }
+  
+  body {
+    color: #313131;
+  }
+  
+  .em-list {
+     font-family: 'Open Sans', sans-serif;
+  }
+  
+  .em-list-item--1 {
+    font-size: 0.05em;
+  }
+  
+  .em-list-item--2 {
+    font-size: 0.1em;
+  }
+  
+  .em-list-item--3 {
+    font-size: 0.15em;
+  }
+  
+  .em-list-item--4 {
+    font-size: 0.2em;
+  }
+  
+  .em-list-item--5 {
+    font-size: 0.25em;
+  }
+  
+  .em-list-item--6 {
+    font-size: 0.30em;
+  }
+  
+  .em-list-item--7 {
+    font-size: 0.35em;
+  }
+  
+  .em-list-item--8 {
+    font-size: 0.40em;
+  }
+  
+  .em-list-item--9 {
+    font-size: 0.45em;
+  }
+  
+  .em-list-item--10 {
+    font-size: 0.50em;
+  }
+  
+  .em-list-item--11 {
+    font-size: 0.55em;
+  }
+  
+  .em-list-item--12 {
+    font-size: 0.60em;
+  }
+  
+  .em-list-item--13 {
+    font-size: 0.65em;
+  }
+  
+  .em-list-item--14 {
+    font-size: 0.70em;
+  }
+  
+  .em-list-item--15 {
+    font-size: 0.75em;
+  }
+  
+  .em-list-item--16 {
+    font-size: 0.80em;
+  }
+  
+  .em-list-item--17 {
+    font-size: 0.85em;
+  }
+  
+  .em-list-item--18 {
+    font-size: 0.90em;
+  }
+  
+  .em-list-item--19 {
+    font-size: 0.95em;
+  }
+  
+  .em-list-item--20 {
+    font-size: 1em;
+  }
+  
+  .rem-list {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .rem-list-item--1 {
+    font-size: 0.05rem;
+  }
+  
+  .rem-list-item--2 {
+    font-size: 0.1rem;
+  }
+  
+  .rem-list-item--3 {
+    font-size: 0.15rem;
+  }
+  
+  .rem-list-item--4 {
+    font-size: 0.2rem;
+  }
+  
+  .rem-list-item--5 {
+    font-size: 0.25rem;
+  }
+  
+  .rem-list-item--6 {
+    font-size: 0.30rem;
+  }
+  
+  .rem-list-item--7 {
+    font-size: 0.35rem;
+  }
+  
+  .rem-list-item--8 {
+    font-size: 0.40rem;
+  }
+  
+  .rem-list-item--9 {
+    font-size: 0.45rem;
+  }
+  
+  .rem-list-item--10 {
+    font-size: 0.50rem;
+  }
+  
+  .rem-list-item--11 {
+    font-size: 0.55rem;
+  }
+  
+  .rem-list-item--12 {
+    font-size: 0.60rem;
+  }
+  
+  .rem-list-item--13 {
+    font-size: 0.65rem;
+  }
+  
+  .rem-list-item--14 {
+    font-size: 0.70rem;
+  }
+  
+  .rem-list-item--15 {
+    font-size: 0.75rem;
+  }
+  
+  .rem-list-item--16 {
+    font-size: 0.80rem;
+  }
+  
+  .rem-list-item--17 {
+    font-size: 0.85rem;
+  }
+  
+  .rem-list-item--18 {
+    font-size: 0.90rem;
+  }
+  
+  .rem-list-item--19 {
+    font-size: 0.95rem;
+  }
+  
+  .rem-list-item--20 {
+    font-size: 1rem;
+  }
+  
+  .background-box {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .background-box--1 {
+    background-color: black;
+    opacity: 0.3;
+    background-image: url("http://unsplash.it/1000/500");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  .background-box--2 {
+    background-color: rebeccapurple;
+    background-image: url("http://unsplash.it/500/500");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+  }
+  
+  .background-box--3 {
+    background-color: whitesmoke;
+    background-image: url("http://unsplash.it/100/500");
+    background-repeat: repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
+  
+  .background-box--4 {
+    background-color: yellowgreen;
+    background-image: url("http://unsplash.it/600/500");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  .background-box--5 {
+    background-color: burlywood;
+    background-image: url("http://unsplash.it/1000/500");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  .background-box--6 {
+    background-color: pink;
+    background-image: url("http://unsplash.it/10/500");
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  .background-box--7 {
+    background-color: gray;
+    background-image: url("http://unsplash.it/1000/20");
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  .background-box--8 {
+    background-color: paleturquoise;
+    background-image: url("http://unsplash.it/600/600");
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: contain;
+  }
+  
+  .background-box--9 {
+    background-color: yellow;
+    background-image: url("http://unsplash.it/1000/1000");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  .background-box--10 {
+    background-color: silver;
+    background-image: url("http://unsplash.it/980/980");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  .background-box--11 {
+    background-color: palegreen;
+    background-image: url("http://unsplash.it/150/150");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+  }
+  
+  .background-box--12 {
+    background-color: paleturquoise;
+    background-image: url("http://unsplash.it/50/50");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
+  
+  .background-box--13 {
+    background-color: palevioletred;
+    background-image: url("http://unsplash.it/1000/500");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .background-box--14 {
+    background-color: violet;
+    background-image: url("http://unsplash.it/550/450");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  .background-box--15 {
+    background-color: goldenrod;
+    background-image: url("http://unsplash.it/300/300");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  .background-box--16 {
+    background-color: peru;
+    opacity: 0.6;
+    background-image: url("http://unsplash.it/10/10");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto;
+  }
+  
+  .background-box--17 {
+    background-color: black;
+    background-image: url("http://unsplash.it/333/233");
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  .background-box--18 {
+    background-color: yellow;
+    background-image: url("http://unsplash.it/3000/2700");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .background-box--19 {
+    background-color: palevioletred;
+    background-image: url("http://unsplash.it/56/500");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  .background-box--20 {
+    background-color: palegreen;
+    background-image: url("http://unsplash.it/1000/500");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+  }
+  
+  .quote {
+    font-family: "Raleway";
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .quote::before {
+    content: '"';
+  }
+  
+  .quote::after {
+    content: '"';
+  }
+  
+  .svg-facebook2 {
+    fill: lightblue
+  }
+  
+  .basic-boxes-wrapper {
+    font-size: 0;
+  }
+  
+  .basic-box {
+    font-size: 16px;
+    border: 2px solid #000;
+    width: calc(20% - 24px);
+    display: inline-block;
+    margin-right: 30px;
+  }
+  
+  .basic-box--5,
+  .basic-box--10 {
+    margin-right: 0;
+  }
+  
+  .blue-wrapper {
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    font-family: "Raleway";
+    font-weight: bold;
+  }
+  
+  .blue-wrapper-title {
+    font-size: 30px;
+  }
+  
+  .people {
+  font-size: 0;
+  }
+  
+  .person {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 16px;
+    width: calc(33% - 46.66px);
+    display: inline-block;
+    margin-right: 70px;
+  }
+  
+  .person person--3 {
+    margin-right: 0;
+  }
+  
+  .person-title {
+    font-style: italic;
+  }
+  
+  .person-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .blue-wrapper-button-wrapper {
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  a { 
+    color: white; 
+  }
+  
+   .main-menu {
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+  }
+  
+  .main-menu li + li {
+    margin-left: 60px;
+  }
+  
+  .bootstrap-box {
+    border: 2px solid black;
+    height: 30px;
+  }
+  
+  .responsive-box--mobile-first,
+  .responsive-box--desktop-first {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .responsive-box--desktop-first {
+    background-color: purple;
+  }
+  
+  @media only screen and (max-width: 1199px) {
+    .responsive-box--desktop-first {
+      background-color: blue;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .responsive-box--desktop-first {
+      background-color: red;
+    }
+  }
+  
+  .responsive-box--mobile-first {
+    background-color: red;
+  }
+  
+  @media only screen and (min-width: 769px) {
+    .responsive-box--mobile-first {
+      background-color: blue;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .responsive-box--mobile-first {
+      background-color: purple;
+    }
+  }
+  
+  .squares {
+    display: flex;
+    flex-wrap: wrap;
+    height: 900px;
+    width: 920px;
+    padding-left: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  .square {
+    width: 300px;
+    height: 300px;
+    border: 2px solid green; 
+    position: relative;
+  }
+  
+  .small-squares {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+  }
+  
+  .small__squares__top {
+    top: 0;
+  }
+  
+  .small__squares__left {
+    left: -2px;
+  }
+  
+  .small__squares__right {
+    right: -2px;
+  }
+  
+  .small__squares__center {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .small__squares__middle__middle {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .small__squares__middle {
+    top: 50%;
+    transform: translateY(-50%)
+  }
+  
+  .small__squares__bottom {
+    bottom: 0;
+  }
+  
+  .banner {
+    background-image: url('http://unsplash.it/1600/815');
+    background-size: cover;
+    padding-top: 202px;
+    padding-bottom: 201px;
+    color: #fff;
+  }
+  
+  .banner {
+    padding-top: 202px;
+    padding-bottom: 201px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .banner__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .banner__content {
+    position: relative;
+    z-index: 1;
+  }
+
+  
+  /* 
+  padding: 30px 20px 15px;
+  - padding-top: 30px;
+  - padding-right: 20px;
+  - padding-bottom: 15px;
+  - padding-left: 20px;
+  */
+  
+  /* 
+  overflow: visible (d) || hidden || scroll || auto
+  
+  - visible: orice nu incape - se vede oricum
+  - hidden: orice nu incape - nu se vede
+  - scroll: orice nu incape se ascunde dupa scroll, scroll-ul apare tot timpul, chiar daca nu trebuie
+  - auto: orice nu incape se ascunde dupa scroll, scroll-ul apare numai la necesitate
+  
+  
+  variatii: overflow-x, overflow-y
+  */
