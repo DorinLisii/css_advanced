@@ -1,0 +1,92 @@
+.filter-box {
+    width: 100%;
+};
+
+.filter-box--blur {
+    filter: blur(2px);
+};
+
+.filter-box--brightness {
+    filter: brightness(0.1);
+};
+
+.filter-box--contrast {
+    filter: contrast(200%)
+};
+
+.filter-box--drop-shadow {
+    filter: drop-shadow(50px 50px 0 red)
+};
+
+.filter-box--grayscale {
+    filter: grayscale(100%)
+};
+
+.filter-box--hue-rotate {
+    filter: hue-rotate(90deg)
+};
+
+.filter-box--invert {
+    filter: invert(100%)
+};
+
+.filter-box--opacity {
+    filter: opacity(30%)
+};
+
+.filter-box--saturate {
+    filter: saturate(30%)
+};
+
+.filter-box--sepia {
+    filter: sepia(30%)
+};
+
+.filter-box--multipl-1 {
+    filter: blur(5px) sepia(50%);
+}
+
+.filter-box--multipl-2 {
+    filter: contrast(50%) saturate(50%);
+}
+
+.filter-box--multipl-3 {
+    filter: blur(1px) opacity(70%);
+}
+
+.filter-box--multipl-4 {
+    filter: saturate(75%) invert(50%);
+}
+
+.filter-box--multipl-5 {
+    filter: blur(5px) hue-rotate(45deg);
+}
+
+.filter-box--multipl-6 {
+    filter: contrast(50%) sepia(50%);
+}
+
+.filter-box--multipl-7 {
+    filter: grayscale(45%) opacity(76%);
+}
+
+.filter-box--multipl-8 {
+    filter: blur(1px) invert(120%);
+}
+
+.filter-box--multipl-9 {
+    filter: grayscale(100%) sepia(50%);
+}
+
+.filter-box--url {
+    filter: url("../../images/filter.svg#filter-id");
+}
+
+
+
+
+
+
+
+
+

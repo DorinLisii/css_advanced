@@ -3,10 +3,12 @@
 @import "base/reset";
 @import "base/typography";
 @import "base/mixins";
-@import "base/bootstrap-grid";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "components/background-box";
 @import "layout/grid";
 @import "layout/section";
+@import "components/filters";
+@import "components/gradients";
 
 
 
