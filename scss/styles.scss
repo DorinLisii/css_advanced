@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 @import "base/colors";
 @import "base/variables";
 @import "base/reset";
@@ -12,6 +18,6 @@
 @import "components/gradients";
 @import "components/ratio-box";
 @import "components/transform";
-
-
+@import "components/transition";
+@import "components/forms"
 

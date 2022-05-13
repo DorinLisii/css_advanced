@@ -1,5 +1,83 @@
-// .section {
-//     background-color: azure;
-//     padding-top: 60px;
-//     padding-bottom: 60px;
-// }
+.section {
+  background-image: radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(255,255,255,1) 0%, rgb(191, 233, 220) 100.2% );
+  border: 1px solid rgb(135, 235, 192);
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.section__title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight:lighter;
+  margin: 20px;
+  padding: 5px;
+  font-size: large;
+  border: solid 2px rgb(58, 59, 142);
+  border-radius: 10px;
+  background-image: radial-gradient( circle 1224px at 10.6% 8.8%, rgb(191, 233, 220) 0%, rgba(255,255,255,1) 100.2%);
+  display: inline-block;
+}
+
+.title_select {
+  font-family: monospace;
+  font-style: italic;
+  margin: 10px;
+  padding: 1px;
+  border: rgb(31, 161, 107) 2px solid; 
+  border-radius: 5px 10px ;
+  display: inline-block;
+}
+
+.btn {
+  background-image: linear-gradient(to right,
+  #1cd2ab 0%, 
+  #f2fcfe 51%,
+  #1cd2ab 100%)
+}
+
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0.9px;
+  padding: 17px 17px;
+  text-align: left;
+  text-transform: uppercase;
+  transition: 0.4s;
+  background-size: 200% auto;
+  color: black;
+  display: block;
+  text-decoration: none;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.btn:hover {
+  background-position: right center;
+  text-decoration: none;
+  border-radius: 0px 12px 12px 0px ;
+  border: solid white 0.1px;
+ }
+
+ .display__icons{
+  padding-top: 25px;
+  display: flex;
+  justify-content: end;
+  align-items: baseline; 
+}
+
+.icons a {
+  border: 1px solid none ;
+  cursor: pointer;
+}
+
+.icons a:focus {
+    border: 2px solid #1cd2ab;
+    border-radius: 5px;
+}
+
+.icons {
+  display: flex;
+  margin-right: 30px;
+}
+
+.icons:last-child {
+  margin-right: 70px;
+}

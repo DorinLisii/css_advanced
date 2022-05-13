@@ -14,7 +14,7 @@ $sidebar-width: 231px;
 
 .header {
   height: $header-height;
-  background-color: yellow;
+  background-color: whitesmoke;
 }
 
 .sidebar {
@@ -22,7 +22,7 @@ $sidebar-width: 231px;
   top: $header-height;
   height: calc(100vh - #{$header-height});
   width: $sidebar-width;
-  background-color: green;
+  background-color: whitesmoke;
 }
 
 .main {
@@ -42,4 +42,6 @@ $sidebar-width: 231px;
   bottom: 0;
   width: 100%;
   height: 100%;
+  margin: auto;
 }
+
