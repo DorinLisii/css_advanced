@@ -9,6 +9,13 @@ document.querySelectorAll('.js-styleguide-link').forEach(function(link) {
     });
   });
 
+  document.querySelectorAll('.js-toggle-device-width').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector('.js-styleguide-iframe').style.width = link.dataset.responsive;
+    });
+  });
+
 var cube = document.querySelector('.cube');
 var radioGroup = document.querySelector('.radio-group');
 var currentClass = '';
@@ -119,3 +126,4 @@ function onOrientationChange() {
 
 // set initials
 onOrientationChange();
+

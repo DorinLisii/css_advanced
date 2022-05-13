@@ -1,0 +1,126 @@
+.transition-area {
+  background-color: #ccc;
+  position: relative;
+  height: 55px;
+
+  &::after {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+
+  &:hover {
+    .transition-child {
+      left: calc(100% - 50px);
+    }
+  }
+}
+/*
+transition-property: all (d) || left || top || opacity - orice proprietate CSS care noi vrem s-o "incetinim"
+transition-duration: <timpul> in valori "s" sau "ms" - cat timp trebuie sa dureze aceasta tranzitie
+transition-timing-funciton: linear || ease || ease-out || ease-in || ease-in-out || cubic-bezier() - metoda prin care tranzitia isi stabileste "viteza"
+transition-delay: <timpul> in valori "s" sau "ms" - cu cat timp amânăm animația
+*/
+.transition-child {
+  width: 50px;
+  height: 50px;
+  background: #f00;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition-property: left;
+  transition-duration: 2s;
+}
+
+.transition-child--1 {
+  transition-timing-function: ease;
+}
+
+.transition-child--2 {
+  transition-timing-function: linear;
+}
+
+.transition-child--3 {
+  transition-timing-function: ease-in;
+}
+
+.transition-child--4 {
+  transition-timing-function: ease;
+}
+
+.transition-child--5 {
+  transition-timing-function: ease;
+}
+
+.transition-child--6 {
+  transition-timing-function: ease;
+}
+
+.transition-child--7 {
+  transition-timing-function: ease;
+}
+
+
+.animation-area {
+  background-color: #ccc;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+
+  &:hover {
+    .animation-child {
+      animation-play-state: paused;
+    }
+  }
+}
+
+/*
+animation-name: <nume> aplica animația creată acestui selector
+animation-duration: 1s - determină durata în timp a acestei animații selectate
+animation-iteration-count: 1 || 2 || 3 || infinite - determină de câte ori animația este pornită+oprită
+animation-timing-funciton: linear || ease || ease-out || ease-in || ease-in-out || cubic-bezier() - metoda prin care animația isi stabileste "viteza"
+animation-delay: <timpul> in valori "s" sau "ms" - cu cat timp amânăm animația
+animation-play-state: running || paused - determina daca la moment este animatia pornita sau oprita
+animation-direction: normal (d) || reverse || alternate || alternate-reverse - determină direcția în/din care animația se rulează (de la "from" la "to" sau de la "to" la "from")
+animation-fill-mode: none(d) || forwards || backwards || both - determină aplicarea stilurilor dinnăutrul animație în afara sa
+- none: stilurile din interiorul keyframes se aplica doar in timpul animatiei, sunt sterse de altfel
+- forwards: stilurile din ultimul cadru se mențin chiar și după sfârșitul animației
+- backwards: stilurile din primul cadru se mențin chiar și înaintea animației, însă numai dacă este delay
+- both: stilurile din primul și ultimul cadru se mențin tot timpul (cele din primul cadru doar începând cu delay)
+*/
+
+@keyframes css-basic {
+  0% {
+    left: 0;
+    background-color: orange;
+  }
+
+  50% {
+    background-color: green;
+  }
+
+  100% {
+    left: calc(100% - 50px);
+    background-color: blue;
+  }
+}
+
+.animation-child {
+  width: 50px;
+  height: 50px;
+  background: #f00;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: css-basic;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  // animation:  css-basic 2s 1 linear 2s alternate both;
+}

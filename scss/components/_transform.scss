@@ -167,9 +167,9 @@
   align-items: center;
 }
 
-* { box-sizing: border-box; }
+// * { box-sizing: border-box; }
 
-body { font-family: sans-serif; }
+// body { font-family: sans-serif; }
 
 .scene {
   width: 200px;
@@ -221,9 +221,9 @@ body { font-family: sans-serif; }
 .cube__face--top    { transform: rotateX( 90deg) translateZ(100px); }
 .cube__face--bottom { transform: rotateX(-90deg) translateZ(100px); }
 
-label { margin-right: 10px; }
+// label { margin-right: 10px; }
 
-body { font-family: sans-serif; }
+// body { font-family: sans-serif; }
 
 .scene {
   width: 300px;
@@ -300,12 +300,12 @@ body { font-family: sans-serif; }
 
 label { margin-right: 10px; }
 
-* { box-sizing: border-box; }
+// * { box-sizing: border-box; }
 
-body {
-  font-family: sans-serif;
-  text-align: center;
-}
+// body {
+//   font-family: sans-serif;
+//   text-align: center;
+// }
 
 .scene {
   border: 1px solid #CCC;
